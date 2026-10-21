@@ -1,4 +1,4 @@
-import '../css/site.css';
+import './style.css';
 
 document.documentElement.className += ' js';
 /* ============================================================

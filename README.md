@@ -30,15 +30,15 @@ npm run preview
 
 ```
 index.html                  Markup for all 27 routes
-css/site.css                Design system + Tailwind CSS theme and utilities
-js/site.js                  Content model, renderers, hash router
-img/                        The three supplied photographs of Segun
+src/style.css               Design system + Tailwind CSS theme and utilities
+src/main.js                 Content model, renderers, hash router
+public/img/                 The three supplied photographs of Segun
 vite.config.js              Vite and Tailwind CSS plugin configuration
 prototype-single-file.html  Portable build — everything inlined, for sending to clients
 SHOT-LIST.md                The 78 image slots still needing photography
 ```
 
-The existing editorial styles remain in `css/site.css`; Tailwind utilities are available alongside them. The package scripts provide local development, production builds, and build previews.
+The existing editorial styles remain in `src/style.css`; Tailwind utilities are available alongside them. The package scripts provide local development, production builds, and build previews.
 
 ---
 
@@ -157,7 +157,7 @@ Until a real image exists it renders as a labelled tonal block, so the design ne
 **To drop in a real photograph**, either:
 
 ```html
-<figure class="ph r-land has-img" style="background-image:url(assets/img/teachers.jpg)"></figure>
+<figure class="ph r-land has-img" style="background-image:url(/img/teachers.jpg)"></figure>
 ```
 
 or set `data-src` and let `applyImages()` handle it. The `has-img` class removes the texture overlay and the label.

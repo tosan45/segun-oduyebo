@@ -420,7 +420,7 @@ blockquote{margin:0}
 /* ---------- Photography (embedded, no scripts required) ---------- */
 .ph-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
 #ph-avatar{border-radius:50%;overflow:hidden}
-.p-bw{background-image:url(../img/segun-portrait-bw.jpg)}
-.p-land{background-image:url(../img/segun-seated-landscape.jpg)}
-.p-port{background-image:url(../img/segun-seated-portrait.jpg)}
+.p-bw{background-image:url(/img/segun-portrait-bw.jpg)}
+.p-land{background-image:url(/img/segun-seated-landscape.jpg)}
+.p-port{background-image:url(/img/segun-seated-portrait.jpg)}
 }
