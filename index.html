@@ -12,22 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-<a href="#app" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-100 focus:bg-ochre focus:text-ink focus:px-4 focus:py-2 focus:rounded-full">Skip to content</a>
-
-<div id="progress" class="fixed inset-x-0 top-0 h-0.75 z-60 bg-ochre origin-left" style="transform:scaleX(0)" aria-hidden="true"></div>
-<header id="header" class="site-header fixed inset-x-0 top-0 z-50"></header>
-<div id="menu" class="fixed inset-0 z-70 invisible" inert role="dialog" aria-modal="true" aria-label="Site menu"></div>
-
-<div id="curtain" class="adire fixed inset-0 z-80 grid place-items-center" aria-hidden="true">
-  <div class="flex flex-col items-center gap-6 px-6 text-center">
-    <span class="hidden size-16 bg-ochre" style="border-radius:999px 999px 8px 8px" data-curtain-mark></span>
-    <span class="text-white text-[clamp(2.2rem,7vw,6rem)] leading-none opacity-0" data-curtain-label></span>
-  </div>
-</div>
-
-<main id="app" tabindex="-1" class="outline-none"></main>
-<footer id="footer"></footer>
-
-<script type="module" src="/src/main.js"></script>
+<div id="root"></div>
+<script type="module" src="/src/main.jsx"></script>
 </body>
 </html>

@@ -115,25 +115,14 @@
   .field .opt { font-weight: 400; opacity: .65; }
   .on-dark .field input::placeholder, .on-dark .field textarea::placeholder { color: rgb(255 255 255 / .5); }
 
-  /* FAQ */
-  .faq summary { list-style: none; cursor: pointer; }
-  .faq summary::-webkit-details-marker { display: none; }
-  .faq .plus { transition: transform .5s var(--ease-expo); }
-  .faq[open] .plus { transform: rotate(45deg); }
-
-  /* Book spines */
-  .spine { writing-mode: vertical-rl; transform-origin: bottom; transition: transform .6s var(--ease-expo); }
-  .spine:hover, .spine:focus-visible { transform: translateY(-18px); }
+  /* Book spines (lift on hover is animated in BookShelf.jsx) */
+  .spine { writing-mode: vertical-rl; }
 
   /* Gallery */
   .gallery-grid { display: grid; grid-template-columns: repeat(2, 1fr); grid-auto-rows: 9rem; grid-auto-flow: dense; gap: .75rem; }
   @media (min-width: 768px) { .gallery-grid { grid-template-columns: repeat(4, 1fr); grid-auto-rows: 12rem; gap: 1rem; } }
   .gallery-grid .tall { grid-row: span 2; }
   .gallery-grid .big { grid-column: span 2; grid-row: span 2; }
-
-  /* Lightbox */
-  .lightbox { padding: 0; border: 0; max-width: none; max-height: none; width: 100vw; height: 100dvh; background: transparent; }
-  .lightbox::backdrop { background: rgb(13 16 48 / .92); }
 }
 
 @media (prefers-reduced-motion: reduce) {
