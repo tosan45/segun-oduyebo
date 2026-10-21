@@ -468,7 +468,10 @@ function renderProgramme(key){
    ROUTER
    ============================================================ */
 function route(){
-  const hash = (location.hash||'#/').replace(/^#\/?/,'');
+  // In-page anchors (#speaking-form) aren't routes: show the page that holds them
+  const anchor = /^#[^/]/.test(location.hash) ? document.getElementById(location.hash.slice(1)) : null;
+  const anchorPage = anchor && anchor.closest('.page[data-route]');
+  const hash = anchorPage ? anchorPage.dataset.route : (location.hash||'#/').replace(/^#\/?/,'');
   const parts = hash.split('/').filter(Boolean);
   let name = parts[0] || 'home';
   const arg = parts[1];
@@ -492,7 +495,8 @@ function route(){
   applyImages(el);
   revealInit(el);
   closeMenu();
-  window.scrollTo({top:0, behavior:'instant'});
+  if(anchorPage) anchor.scrollIntoView({behavior:'smooth', block:'start'});
+  else window.scrollTo({top:0, behavior:'instant'});
   document.title = (name==='home'?'Segun Oduyebo — Developing People. Strengthening Leaders.':
     (name==='article'&&art(arg)? art(arg).title+' — Segun Oduyebo' : name.charAt(0).toUpperCase()+name.slice(1)+' — Segun Oduyebo'));
 }
