@@ -21,7 +21,7 @@ export default function RecordTemplate() {
         <div className="lg:col-span-4 lg:sticky lg:top-28">
           <SectionHead title="What every record will hold." intro="Seven questions, answered in order, for each programme, project and intervention." />
         </div>
-        <div className="lg:col-span-7 lg:col-start-6 bg-white rounded-md shadow-[0_30px_80px_-30px_rgb(17_92_56/.35)] p-6 sm:p-10 lg:p-14">
+        <div className="lg:col-span-7 lg:col-start-6 bg-paper rounded-md shadow-[0_30px_80px_-30px_rgb(17_92_56/.35)] p-6 sm:p-10 lg:p-14">
           <div className="flex items-center justify-between gap-4 pb-6 border-b-2 border-brand">
             <p className="display text-2xl text-brand">Programme record</p>
             <p className="text-sm font-semibold rounded-full bg-ochre-soft text-ink px-3 py-1">Template</p>

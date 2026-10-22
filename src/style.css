@@ -10,7 +10,8 @@
   --color-brand: #115C38;
   --color-brand-2: #1B7A4D;
   --color-brand-3: #2A8C5C;
-  --color-wash: #EAF2ED;
+  --color-paper: #F2F8F4;
+  --color-wash: #E4EFE8;
   --color-ochre: #F4BA5C;
   --color-ochre-soft: #FAE0B0;
   --color-ink: #0B2418;
@@ -35,7 +36,7 @@
 
 @layer base {
   html { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
-  body { background: #fff; color: var(--color-ink); font-family: var(--font-sans); overflow-x: clip; }
+  body { background: var(--color-paper); color: var(--color-ink); font-family: var(--font-sans); overflow-x: clip; }
   h1, h2, h3, h4 { text-wrap: balance; }
   p { text-wrap: pretty; }
   ::selection { background: var(--color-ochre); color: var(--color-ink); }
@@ -91,7 +92,7 @@
 
   /* Header */
   .site-header { transition: background-color .4s, box-shadow .4s, color .4s; }
-  .site-header.is-solid { background: rgb(255 255 255 / .86); backdrop-filter: blur(14px) saturate(160%); box-shadow: 0 1px 0 rgb(11 36 24 / .08); }
+  .site-header.is-solid { background: rgb(242 248 244 / .86); backdrop-filter: blur(14px) saturate(160%); box-shadow: 0 1px 0 rgb(11 36 24 / .08); }
   .nav-link { position: relative; font-weight: 550; font-stretch: 100%; transition: font-stretch .5s var(--ease-expo); }
   .nav-link:hover, .nav-link[aria-current="page"] { font-stretch: 106%; }
   .nav-link::after { content: ""; position: absolute; left: 0; right: 0; bottom: -6px; height: 2px; background: var(--color-ochre); transform: scaleX(0); transform-origin: left; transition: transform .5s var(--ease-expo); }

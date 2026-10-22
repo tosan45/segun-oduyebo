@@ -43,7 +43,7 @@ To change the footer, edit `src/components/layout/Footer.jsx`. To change a home-
 
 ## Design
 
-- **Palette**: brand green `#115C38`, gold `#F4BA5C` (from the backdrop in Segun's studio portraits), green wash `#EAF2ED`, ink `#0B2418`. Tokens are `brand`, `brand-2`, `brand-3`, `ochre`, `wash`, `ink` and `mute` in `src/style.css`.
+- **Palette**: brand green `#115C38`, gold `#F4BA5C` (from the backdrop in Segun's studio portraits), light green page background `#F2F8F4` (`paper`), deeper green wash `#E4EFE8` for alternating sections, ink `#0B2418`. Tokens are `brand`, `brand-2`, `brand-3`, `ochre`, `paper`, `wash`, `ink` and `mute` in `src/style.css`.
 - **Type**: Archivo variable for display and UI at normal width; a few headings ease in from condensed. Newsreader for reading text and quotes.
 - **Motifs**: arch-shaped portrait frames, and a faint tied-circle (*oniko*) pattern on green sections.
 

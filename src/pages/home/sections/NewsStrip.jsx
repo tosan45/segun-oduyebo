@@ -23,7 +23,7 @@ export default function NewsStrip() {
               href={n.url}
               target="_blank"
               rel="noopener"
-              className="group bg-white p-6 lg:p-8 flex flex-col gap-4 min-h-72 hover:bg-wash transition-colors duration-500"
+              className="group bg-paper p-6 lg:p-8 flex flex-col gap-4 min-h-72 hover:bg-wash transition-colors duration-500"
             >
               <p className="text-sm text-mute">{n.source}, {n.date}</p>
               <h3 className="text-2xl font-bold text-brand leading-tight">{n.title}</h3>

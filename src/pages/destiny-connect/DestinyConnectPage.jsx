@@ -34,7 +34,7 @@ export default function DestinyConnectPage() {
         submit="Register interest"
         fields={FIELDS}
       />
-      <hr className="text-[#8ab888] h-2" />
+   
     </>
   );
 }
