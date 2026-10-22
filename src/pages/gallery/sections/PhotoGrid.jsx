@@ -37,7 +37,7 @@ export default function PhotoGrid({ filter, openPhoto, onOpen }) {
                   {openPhoto !== k && (
                     <Photo photo={k} layoutId={`photo-${k}`} className="size-full object-cover transition-transform duration-[1.2s] ease-(--ease-expo) group-hover:scale-105" />
                   )}
-                  <span className="absolute inset-x-0 bottom-0 p-3 text-left text-sm font-semibold text-white bg-gradient-to-t from-adire/85 to-transparent opacity-0 translate-y-2 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 group-focus-visible:opacity-100">
+                  <span className="absolute inset-x-0 bottom-0 p-3 text-left text-sm font-semibold text-white bg-gradient-to-t from-brand/85 to-transparent opacity-0 translate-y-2 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 group-focus-visible:opacity-100">
                     {p.caption}
                   </span>
                 </button>

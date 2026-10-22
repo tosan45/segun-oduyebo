@@ -15,7 +15,7 @@ export default function NewsStrip() {
           <SectionHead title="In the news and in print." />
           <Reveal><Button to="news" variant="line">All news and publications</Button></Reveal>
         </div>
-        <Stagger className="mt-14 grid md:grid-cols-3 gap-px bg-adire/15 border-y border-adire/15">
+        <Stagger className="mt-14 grid md:grid-cols-3 gap-px bg-brand/15 border-y border-brand/15">
           {LATEST.map(n => (
             <StaggerItem
               as="a"
@@ -26,9 +26,9 @@ export default function NewsStrip() {
               className="group bg-white p-6 lg:p-8 flex flex-col gap-4 min-h-72 hover:bg-wash transition-colors duration-500"
             >
               <p className="text-sm text-mute">{n.source}, {n.date}</p>
-              <h3 className="text-2xl font-bold text-adire leading-tight">{n.title}</h3>
+              <h3 className="text-2xl font-bold text-brand leading-tight">{n.title}</h3>
               <p className="text-mute">{n.text}</p>
-              <span className="mt-auto inline-flex items-center gap-2 font-semibold text-adire-2">Read on {n.source.split(',')[0]}<ExternalIcon /></span>
+              <span className="mt-auto inline-flex items-center gap-2 font-semibold text-brand-2">Read on {n.source.split(',')[0]}<ExternalIcon /></span>
             </StaggerItem>
           ))}
         </Stagger>

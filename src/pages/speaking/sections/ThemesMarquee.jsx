@@ -4,7 +4,7 @@ import { Dot } from '../../../components/ui/Mark.jsx';
 
 export default function ThemesMarquee() {
   return (
-    <section className="adire on-dark py-16 lg:py-20" aria-label="Themes">
+    <section className="brand on-dark py-16 lg:py-20" aria-label="Themes">
       <Marquee speed={2.5}>
         <ul className="flex items-center">
           {SPEAKING_THEMES.map(t => (

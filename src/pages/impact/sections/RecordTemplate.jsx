@@ -21,16 +21,16 @@ export default function RecordTemplate() {
         <div className="lg:col-span-4 lg:sticky lg:top-28">
           <SectionHead title="What every record will hold." intro="Seven questions, answered in order, for each programme, project and intervention." />
         </div>
-        <div className="lg:col-span-7 lg:col-start-6 bg-white rounded-md shadow-[0_30px_80px_-30px_rgb(22_28_79/.35)] p-6 sm:p-10 lg:p-14">
-          <div className="flex items-center justify-between gap-4 pb-6 border-b-2 border-adire">
-            <p className="display text-2xl text-adire">Programme record</p>
+        <div className="lg:col-span-7 lg:col-start-6 bg-white rounded-md shadow-[0_30px_80px_-30px_rgb(17_92_56/.35)] p-6 sm:p-10 lg:p-14">
+          <div className="flex items-center justify-between gap-4 pb-6 border-b-2 border-brand">
+            <p className="display text-2xl text-brand">Programme record</p>
             <p className="text-sm font-semibold rounded-full bg-ochre-soft text-ink px-3 py-1">Template</p>
           </div>
           <Stagger as="ol" gap={0.12} amount={0.25}>
             {IMPACT_FIELDS.map((f, i) => (
-              <StaggerItem as="li" key={f.name} variants={ROW} className="grid sm:grid-cols-[2.5rem_12rem_1fr] gap-x-4 gap-y-1 py-5 border-b border-adire/10">
-                <span className="text-adire-3 font-semibold tabular-nums">{i + 1}</span>
-                <span className="font-bold text-adire">{f.name}</span>
+              <StaggerItem as="li" key={f.name} variants={ROW} className="grid sm:grid-cols-[2.5rem_12rem_1fr] gap-x-4 gap-y-1 py-5 border-b border-brand/10">
+                <span className="text-brand-3 font-semibold tabular-nums">{i + 1}</span>
+                <span className="font-bold text-brand">{f.name}</span>
                 <span className="text-mute">
                   {f.text}
                   <motion.span variants={LINE} className="block mt-3 h-2 rounded-full bg-wash origin-left" />

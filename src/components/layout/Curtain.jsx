@@ -2,7 +2,7 @@ import { useImperativeHandle, useRef } from 'react';
 import { animate, useReducedMotion } from 'motion/react';
 import { EASE, EASE_IO, SPRING } from '../../lib/motion.js';
 
-/* Indigo panel that covers the screen between pages.
+/* Brand-green panel that covers the screen between pages.
    The parent drives it through ref: intro(), cover(label), uncover(). */
 export default function Curtain({ ref }) {
   const reduce = useReducedMotion();
@@ -16,7 +16,7 @@ export default function Curtain({ ref }) {
     onUpdate: v => {
       const el = label.current;
       el.style.opacity = Math.min(1, v * 2);
-      el.style.fontStretch = `${62 + 63 * v}%`;
+      el.style.fontStretch = `${75 + 25 * v}%`;
       el.style.fontWeight = Math.round(200 + 600 * v);
     }
   });
@@ -44,7 +44,7 @@ export default function Curtain({ ref }) {
   }));
 
   return (
-    <div ref={panel} className="adire fixed inset-0 z-80 grid place-items-center" aria-hidden="true">
+    <div ref={panel} className="brand fixed inset-0 z-80 grid place-items-center" aria-hidden="true">
       <div className="flex flex-col items-center gap-6 px-6 text-center">
         <span ref={mark} className="hidden size-16 bg-ochre" style={{ borderRadius: '999px 999px 8px 8px' }} />
         <span ref={label} className="text-white text-[clamp(2.2rem,7vw,6rem)] leading-none opacity-0" />

@@ -10,8 +10,8 @@ function Practice({ lead, rest }) {
   const ref = useRef(null);
   const on = useEnter(ref, { amount: 0.5 });
   return (
-    <li ref={ref} className="border-t border-adire/20 py-8 lg:py-12">
-      <StretchIn className="display block text-[clamp(2.2rem,5vw,4.75rem)] leading-none text-adire">{lead}</StretchIn>
+    <li ref={ref} className="border-t border-brand/20 py-8 lg:py-12">
+      <StretchIn className="display block text-[clamp(2.2rem,5vw,4.75rem)] leading-none text-brand">{lead}</StretchIn>
       <motion.span
         className="block font-serif italic text-[clamp(1.4rem,2.6vw,2.4rem)] text-mute mt-2"
         initial={{ opacity: 0, x: -40 }}

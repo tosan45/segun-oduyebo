@@ -43,9 +43,9 @@ To change the footer, edit `src/components/layout/Footer.jsx`. To change a home-
 
 ## Design
 
-- **Palette**: adire indigo `#161C4F` (Yoruba resist-dyed cloth), ochre `#EFA23A` (the backdrop in Segun's studio portraits), indigo wash `#ECEEF7`, ink `#0D1030`.
-- **Type**: Archivo variable for display and UI. Its width axis is animated as the site's signature. Newsreader for reading text and quotes.
-- **Motifs**: arch-shaped portrait frames, and an adire *oniko* (tied-circle) pattern on dark sections.
+- **Palette**: brand green `#115C38`, gold `#F4BA5C` (from the backdrop in Segun's studio portraits), green wash `#EAF2ED`, ink `#0B2418`. Tokens are `brand`, `brand-2`, `brand-3`, `ochre`, `wash`, `ink` and `mute` in `src/style.css`.
+- **Type**: Archivo variable for display and UI at normal width; a few headings ease in from condensed. Newsreader for reading text and quotes.
+- **Motifs**: arch-shaped portrait frames, and a faint tied-circle (*oniko*) pattern on green sections.
 
 ## Motion components
 
@@ -55,7 +55,7 @@ To change the footer, edit `src/components/layout/Footer.jsx`. To change a home-
 | `<Stagger>` + `<StaggerItem>` | Children enter in sequence |
 | `<SplitText text="...">` | Headline words rise out of a mask (`\n` for a line break) |
 | `<ScrubText>` | Words light up as you scroll past |
-| `<StretchText>` / `<StretchIn>` | Archivo width and weight grow on scroll / on view |
+| `<StretchText>` / `<StretchIn>` | Text eases from condensed and light to normal width and heavy, on scroll / on view |
 | `<Frame>` | Photo wipes in, optional parallax and arch shape |
 | `<Magnetic>` | Leans toward the pointer |
 | `<Marquee>` | Endless ribbon that speeds up with scroll velocity |

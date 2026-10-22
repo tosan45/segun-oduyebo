@@ -6,8 +6,8 @@ import { useMediaQuery } from '../../../lib/useMediaQuery.js';
 import SplitText from '../../../components/motion/SplitText.jsx';
 import Reveal from '../../../components/motion/Reveal.jsx';
 
-const OCHRE = '#EFA23A';
-const ADIRE = '#161C4F';
+const OCHRE = '#F4BA5C';
+const BRAND = '#115C38';
 
 /* Six stages advance as you scroll; the ring draws itself.
    Pinned on large screens, a plain list on small ones. */
@@ -23,7 +23,7 @@ export default function LearningCycle() {
   });
 
   return (
-    <section ref={ref} className="adire on-dark relative lg:h-[420vh]" aria-labelledby="cycle-title">
+    <section ref={ref} className="brand on-dark relative lg:h-[420vh]" aria-labelledby="cycle-title">
       <div className="lg:sticky top-0 lg:h-svh px-4 sm:px-8 py-24 lg:py-0 flex items-center">
         <div className="mx-auto w-full max-w-[1440px] grid lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-5">
@@ -64,7 +64,7 @@ export default function LearningCycle() {
                       key={s.name}
                       className="absolute -translate-x-1/2 -translate-y-1/2 size-4 rounded-full border-2"
                       style={{ left: `${50 + 43 * Math.cos(a)}%`, top: `${50 + 43 * Math.sin(a)}%` }}
-                      animate={{ scale: i === active ? 1.8 : 1, backgroundColor: on ? OCHRE : ADIRE, borderColor: on ? OCHRE : 'rgba(255,255,255,.4)' }}
+                      animate={{ scale: i === active ? 1.8 : 1, backgroundColor: on ? OCHRE : BRAND, borderColor: on ? OCHRE : 'rgba(255,255,255,.4)' }}
                       transition={{ duration: 0.5, ease: EASE }}
                     />
                   );

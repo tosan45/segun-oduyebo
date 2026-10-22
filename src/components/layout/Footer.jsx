@@ -7,7 +7,7 @@ import StretchText from '../motion/StretchText.jsx';
 /* Site footer: closing line and CTAs, grouped links, a faint wordmark, values and copyright */
 export default function Footer() {
   return (
-    <footer className="adire on-dark px-4 sm:px-8 pt-24 pb-10 overflow-hidden">
+    <footer className="brand on-dark px-4 sm:px-8 pt-24 pb-10 overflow-hidden">
       <div className="mx-auto max-w-[1440px]">
         <div className="grid lg:grid-cols-12 gap-12 pb-16">
           <div className="lg:col-span-5">

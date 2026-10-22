@@ -21,7 +21,7 @@ export default function Gatherings() {
                 as="li"
                 key={f}
                 variants={POP}
-                className="rounded-full border-[1.5px] border-adire/25 px-5 py-3 text-lg font-semibold text-adire hover:bg-adire hover:text-white hover:border-adire transition-colors duration-300"
+                className="rounded-full border-[1.5px] border-brand/25 px-5 py-3 text-lg font-semibold text-brand hover:bg-brand hover:text-white hover:border-brand transition-colors duration-300"
               >
                 {f}
               </StaggerItem>

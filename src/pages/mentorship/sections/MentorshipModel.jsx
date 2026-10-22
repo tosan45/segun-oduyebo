@@ -6,9 +6,9 @@ import SectionHead from '../../../components/shared/SectionHead.jsx';
 import Reveal from '../../../components/motion/Reveal.jsx';
 
 const RINGS = [
-  { r: 70, dots: 8, size: 7, fill: 'fill-adire' },
-  { r: 130, dots: 14, size: 6, fill: 'fill-adire-2' },
-  { r: 185, dots: 28, size: 4.5, fill: 'fill-adire-3' }
+  { r: 70, dots: 8, size: 7, fill: 'fill-brand' },
+  { r: 130, dots: 14, size: 6, fill: 'fill-brand-2' },
+  { r: 185, dots: 28, size: 4.5, fill: 'fill-brand-3' }
 ];
 
 /* One centre, a ring of cohorts, a wider ring of mentors: each ring
@@ -29,7 +29,7 @@ function Diagram() {
       {RINGS.map((ring, i) => (
         <motion.circle
           key={ring.r}
-          cx="200" cy="200" r={ring.r} fill="none" stroke="var(--color-adire)" strokeOpacity=".15" strokeWidth="1.5"
+          cx="200" cy="200" r={ring.r} fill="none" stroke="var(--color-brand)" strokeOpacity=".15" strokeWidth="1.5"
           strokeDasharray={i === 2 ? '4 6' : undefined}
           initial={{ opacity: 0, scale: 0.3 }}
           animate={on ? { opacity: 1, scale: 1 } : {}}
@@ -60,14 +60,14 @@ export default function MentorshipModel() {
       <div className="mx-auto max-w-[1440px] grid lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-6">
           <SectionHead title="A model designed to multiply." intro="From shared wisdom to stronger communities: each layer reaches further than the one before it." />
-          <ol className="mt-12 border-b border-adire/15">
+          <ol className="mt-12 border-b border-brand/15">
             {MENTORSHIP_TIERS.map(t => (
-              <Reveal as="li" key={t.name} className="border-t border-adire/15 py-7 grid sm:grid-cols-[1fr_12rem] gap-3">
+              <Reveal as="li" key={t.name} className="border-t border-brand/15 py-7 grid sm:grid-cols-[1fr_12rem] gap-3">
                 <div>
-                  <h3 className="text-2xl font-bold text-adire wide">{t.name}</h3>
+                  <h3 className="text-2xl font-bold text-brand wide">{t.name}</h3>
                   <p className="text-mute mt-2 measure">{t.text}</p>
                 </div>
-                <p className="text-sm font-semibold text-adire-2 sm:text-right">{t.reach}</p>
+                <p className="text-sm font-semibold text-brand-2 sm:text-right">{t.reach}</p>
               </Reveal>
             ))}
           </ol>

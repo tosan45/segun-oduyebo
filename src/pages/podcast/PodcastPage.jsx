@@ -27,7 +27,7 @@ export default function PodcastPage() {
         actions={<>
           <Button to="#notes">Get episode notes</Button>
           {PLATFORMS.map(p => (
-            <span key={p} aria-disabled="true" className="btn btn-line !text-mute !shadow-[inset_0_0_0_1.5px_rgb(13_16_48/.2)] cursor-default">
+            <span key={p} aria-disabled="true" className="btn btn-line !text-mute !shadow-[inset_0_0_0_1.5px_rgb(11_36_24/.2)] cursor-default">
               {p}<span className="text-xs font-normal">soon</span>
             </span>
           ))}

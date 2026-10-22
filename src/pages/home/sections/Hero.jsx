@@ -10,8 +10,8 @@ export default function Hero() {
     <section className="relative px-4 sm:px-8 pt-28 lg:pt-32 pb-20 min-h-svh flex items-center overflow-hidden">
       <div className="mx-auto w-full max-w-[1440px] grid lg:grid-cols-[1fr_minmax(0,30%)] gap-12 lg:gap-6 items-center">
         <div className="relative z-10">
-          <Reveal as="p" variant="fade" className="text-adire-2 font-semibold text-lg flex items-center gap-3"><Dot />Pastor, teacher and people developer</Reveal>
-          <SplitText as="h1" text={'Developing\npeople.'} className="display text-mega text-adire mt-6" />
+          <Reveal as="p" variant="fade" className="text-brand-2 font-semibold text-lg flex items-center gap-3"><Dot />Pastor, teacher and people developer</Reveal>
+          <SplitText as="h1" text={'Developing\npeople.'} className="display text-mega text-brand mt-6" />
           <Reveal as="p" delay={0.45} className="text-lede text-mute mt-8 max-w-[30em]">
             With the character, capacity and purpose to strengthen their communities. Mentor, author and community builder, rooted in faith and focused on people.
           </Reveal>
@@ -30,7 +30,7 @@ export default function Hero() {
         <a href="#conviction" className="flex flex-col items-center gap-2 text-sm text-mute">
           Scroll
           <span className="block w-px h-10 bg-mute/40 overflow-hidden">
-            <motion.span className="block w-px h-4 bg-adire" animate={{ y: ['-100%', '250%'] }} transition={{ duration: 1.6, repeat: Infinity, ease: 'easeInOut' }} />
+            <motion.span className="block w-px h-4 bg-brand" animate={{ y: ['-100%', '250%'] }} transition={{ duration: 1.6, repeat: Infinity, ease: 'easeInOut' }} />
           </span>
         </a>
       </Reveal>

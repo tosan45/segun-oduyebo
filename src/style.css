@@ -2,19 +2,19 @@
 
 /* ============================================================
    SEGUN ODUYEBO — DESIGN TOKENS
-   Adire indigo (Yoruba resist-dyed cloth) with the ochre of
-   Segun's studio portraits. Archivo's width axis carries the
-   personality; Newsreader carries the reading.
+   Brand green #115C38 with a warm gold taken from Segun's
+   studio portraits. Archivo for display and UI, with a light
+   touch of its width axis; Newsreader carries the reading.
    ============================================================ */
 @theme {
-  --color-adire: #161C4F;
-  --color-adire-2: #252F7A;
-  --color-adire-3: #3B47A8;
-  --color-wash: #ECEEF7;
-  --color-ochre: #EFA23A;
-  --color-ochre-soft: #F7D29C;
-  --color-ink: #0D1030;
-  --color-mute: #4A4E6E;
+  --color-brand: #115C38;
+  --color-brand-2: #1B7A4D;
+  --color-brand-3: #2A8C5C;
+  --color-wash: #EAF2ED;
+  --color-ochre: #F4BA5C;
+  --color-ochre-soft: #FAE0B0;
+  --color-ink: #0B2418;
+  --color-mute: #4A5C52;
 
   --font-sans: "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-serif: "Newsreader", Georgia, serif;
@@ -29,7 +29,7 @@
 @utility text-d3 { font-size: clamp(1.5rem, 2.5vw, 2.35rem); line-height: 1.06; letter-spacing: -.01em; }
 @utility text-lede { font-family: var(--font-serif); font-size: clamp(1.2rem, 1.65vw, 1.5rem); line-height: 1.5; }
 @utility text-read { font-family: var(--font-serif); font-size: 1.15rem; line-height: 1.65; }
-@utility wide { font-stretch: 125%; }
+@utility wide { font-stretch: 108%; }
 @utility narrow { font-stretch: 75%; }
 @utility measure { max-width: 34em; }
 
@@ -46,15 +46,15 @@
 
 @layer components {
   /* Display type: wide, heavy, active */
-  .display { font-weight: 800; font-stretch: 125%; }
+  .display { font-weight: 800; font-stretch: 100%; }
 
   /* Word mask for split headlines */
   .w { display: inline-block; overflow: hidden; vertical-align: top; padding-bottom: .1em; margin-bottom: -.1em; }
   .wi { display: inline-block; }
 
-  /* Adire oniko pattern: tied circles and dots */
-  .adire {
-    background-color: var(--color-adire);
+  /* Brand surface with a faint tied-circle (oniko) pattern */
+  .brand {
+    background-color: var(--color-brand);
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.075' stroke-width='1.4'%3E%3Ccircle cx='18' cy='18' r='11'/%3E%3Ccircle cx='18' cy='18' r='5'/%3E%3Ccircle cx='54' cy='54' r='11'/%3E%3Ccircle cx='54' cy='54' r='5'/%3E%3C/g%3E%3Cg fill='%23ffffff' fill-opacity='.08'%3E%3Ccircle cx='54' cy='18' r='2.2'/%3E%3Ccircle cx='18' cy='54' r='2.2'/%3E%3Ccircle cx='45' cy='18' r='1.2'/%3E%3Ccircle cx='63' cy='18' r='1.2'/%3E%3Ccircle cx='54' cy='9' r='1.2'/%3E%3Ccircle cx='54' cy='27' r='1.2'/%3E%3Ccircle cx='9' cy='54' r='1.2'/%3E%3Ccircle cx='27' cy='54' r='1.2'/%3E%3Ccircle cx='18' cy='45' r='1.2'/%3E%3Ccircle cx='18' cy='63' r='1.2'/%3E%3C/g%3E%3C/svg%3E");
     color: #fff;
   }
@@ -67,7 +67,7 @@
     position: relative; isolation: isolate; overflow: hidden;
     display: inline-flex; align-items: center; justify-content: center; gap: .65rem;
     min-height: 3.25rem; padding: 0 1.6rem; border-radius: 999px;
-    font-weight: 650; font-stretch: 110%; font-size: 1rem; white-space: nowrap;
+    font-weight: 650; font-stretch: 100%; font-size: 1rem; white-space: nowrap;
     transition: color .45s var(--ease-expo);
   }
   .btn::before {
@@ -77,11 +77,11 @@
   }
   .btn:hover::before, .btn:focus-visible::before { transform: none; }
   .btn-ochre { background: var(--color-ochre); color: var(--color-ink); --fill: #fff; }
-  .btn-ink { background: var(--color-adire); color: #fff; --fill: var(--color-adire-3); }
-  .btn-line { box-shadow: inset 0 0 0 1.5px currentColor; color: var(--color-adire); --fill: var(--color-adire); }
+  .btn-ink { background: var(--color-brand); color: #fff; --fill: var(--color-brand-3); }
+  .btn-line { box-shadow: inset 0 0 0 1.5px currentColor; color: var(--color-brand); --fill: var(--color-brand); }
   .btn-line:hover, .btn-line:focus-visible { color: #fff; }
   .on-dark .btn-line { color: #fff; --fill: #fff; }
-  .on-dark .btn-line:hover, .on-dark .btn-line:focus-visible { color: var(--color-adire); }
+  .on-dark .btn-line:hover, .on-dark .btn-line:focus-visible { color: var(--color-brand); }
   .btn svg { transition: transform .5s var(--ease-expo); }
   .btn:hover svg { transform: translateX(4px); }
 
@@ -91,15 +91,15 @@
 
   /* Header */
   .site-header { transition: background-color .4s, box-shadow .4s, color .4s; }
-  .site-header.is-solid { background: rgb(255 255 255 / .86); backdrop-filter: blur(14px) saturate(160%); box-shadow: 0 1px 0 rgb(13 16 48 / .08); }
+  .site-header.is-solid { background: rgb(255 255 255 / .86); backdrop-filter: blur(14px) saturate(160%); box-shadow: 0 1px 0 rgb(11 36 24 / .08); }
   .nav-link { position: relative; font-weight: 550; font-stretch: 100%; transition: font-stretch .5s var(--ease-expo); }
-  .nav-link:hover, .nav-link[aria-current="page"] { font-stretch: 118%; }
+  .nav-link:hover, .nav-link[aria-current="page"] { font-stretch: 106%; }
   .nav-link::after { content: ""; position: absolute; left: 0; right: 0; bottom: -6px; height: 2px; background: var(--color-ochre); transform: scaleX(0); transform-origin: left; transition: transform .5s var(--ease-expo); }
   .nav-link[aria-current="page"]::after { transform: none; }
 
   /* Big list rows that stretch on hover */
-  .stretch-row { transition: font-stretch .7s var(--ease-expo), color .4s; font-stretch: 92%; }
-  .group:hover .stretch-row, .group:focus-visible .stretch-row { font-stretch: 125%; }
+  .stretch-row { transition: font-stretch .7s var(--ease-expo), color .4s; font-stretch: 94%; }
+  .group:hover .stretch-row, .group:focus-visible .stretch-row { font-stretch: 108%; }
 
   /* Forms */
   .field label { display: block; font-size: .9rem; font-weight: 600; margin-bottom: .35rem; }

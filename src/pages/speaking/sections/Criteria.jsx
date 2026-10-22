@@ -14,8 +14,8 @@ export default function Criteria() {
         </div>
         <Stagger as="dl" className="lg:col-span-6 lg:col-start-7 grid sm:grid-cols-2 gap-x-8 gap-y-10">
           {SPEAKING_CRITERIA.map(c => (
-            <StaggerItem key={c.name} className="border-t-4 border-adire pt-5">
-              <dt className="text-2xl font-bold text-adire wide">{c.name}</dt>
+            <StaggerItem key={c.name} className="border-t-4 border-brand pt-5">
+              <dt className="text-2xl font-bold text-brand wide">{c.name}</dt>
               <dd className="text-mute mt-2">{c.text}</dd>
             </StaggerItem>
           ))}

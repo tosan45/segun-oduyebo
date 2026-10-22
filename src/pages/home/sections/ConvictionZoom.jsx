@@ -33,7 +33,7 @@ export default function ConvictionZoom() {
         <motion.div className="absolute inset-0" style={reduce ? undefined : { clipPath }}>
           <Photo photo="closeup" className="absolute inset-0 size-full object-cover" style={reduce ? undefined : { scale: scaleA }} animated />
           <Photo photo="osunAudience" className="absolute inset-0 size-full object-cover" style={reduce ? undefined : { opacity: opacityB, scale: scaleB }} animated />
-          <motion.div className="absolute inset-0 bg-gradient-to-t from-adire via-adire/55 to-adire/20" style={reduce ? undefined : { opacity: shade }} />
+          <motion.div className="absolute inset-0 bg-gradient-to-t from-brand via-brand/55 to-brand/20" style={reduce ? undefined : { opacity: shade }} />
         </motion.div>
         <div className="absolute inset-0 flex items-end px-4 sm:px-8 pb-16 lg:pb-24 pointer-events-none">
           <div className="mx-auto w-full max-w-[1440px]">

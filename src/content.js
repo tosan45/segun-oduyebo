@@ -207,10 +207,10 @@ export const SPEAKING_FAQ = [
 ];
 
 export const BOOKS = [
-  { title: 'Emotional Intelligence', tone: 'adire' },
+  { title: 'Emotional Intelligence', tone: 'brand' },
   { title: 'Positioning Yourself Strategically for Impact', tone: 'ochre' },
   { title: 'Catch a Vision', tone: 'wash' },
   { title: 'Dynamics of Leadership', tone: 'ink' },
-  { title: 'Dynamics of Responsibility', tone: 'adire-2' },
-  { title: 'Celebration of Discipline', tone: 'adire-3' }
+  { title: 'Dynamics of Responsibility', tone: 'brand-2' },
+  { title: 'Celebration of Discipline', tone: 'brand-3' }
 ];

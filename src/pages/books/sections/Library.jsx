@@ -11,18 +11,18 @@ const load = () => { try { return JSON.parse(localStorage.getItem(KEY)) || []; }
 const save = list => { try { localStorage.setItem(KEY, JSON.stringify(list)); } catch { /* storage unavailable */ } };
 
 const TONES = {
-  adire: 'adire text-white',
+  brand: 'brand text-white',
   ochre: 'bg-ochre text-ink',
-  wash: 'bg-wash text-adire',
+  wash: 'bg-wash text-brand',
   ink: 'bg-ink text-ochre',
-  'adire-2': 'bg-adire-2 text-white',
-  'adire-3': 'bg-adire-3 text-white'
+  'brand-2': 'bg-brand-2 text-white',
+  'brand-3': 'bg-brand-3 text-white'
 };
 
 /* Placeholder cover until artwork is confirmed */
 function Cover({ book }) {
   return (
-    <div className={`relative aspect-[2/3] rounded-r-md rounded-l-sm p-6 flex flex-col justify-between shadow-[0_24px_50px_-20px_rgb(22_28_79/.55)] overflow-hidden ${TONES[book.tone]}`}>
+    <div className={`relative aspect-[2/3] rounded-r-md rounded-l-sm p-6 flex flex-col justify-between shadow-[0_24px_50px_-20px_rgb(17_92_56/.55)] overflow-hidden ${TONES[book.tone]}`}>
       <span className="absolute inset-y-0 left-0 w-3 bg-black/15" aria-hidden="true" />
       <span className="absolute -right-16 -bottom-16 size-48 rounded-full border-[1.6rem] border-current opacity-15" aria-hidden="true" />
       <span className="relative display text-2xl leading-[1.02] pl-2">{book.title}</span>
@@ -52,7 +52,7 @@ export default function Library() {
                 <motion.div whileHover={{ rotateY: -14, y: -8 }} transition={{ duration: 0.7, ease: EASE }} style={{ transformOrigin: 'left' }}>
                   <Cover book={b} />
                 </motion.div>
-                <h3 className="mt-6 text-xl font-bold text-adire leading-tight">{b.title}</h3>
+                <h3 className="mt-6 text-xl font-bold text-brand leading-tight">{b.title}</h3>
                 <p className="text-sm text-mute mt-1">Edition and availability to be confirmed</p>
                 <motion.button
                   className={`btn ${on ? 'btn-ink' : 'btn-line'} !min-h-11 !px-4 mt-4 text-sm`}

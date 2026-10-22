@@ -10,10 +10,10 @@ function Question({ q, a }) {
   const [open, setOpen] = useState(false);
   const id = useId();
   return (
-    <Reveal className="border-t border-adire/15">
+    <Reveal className="border-t border-brand/15">
       <h3>
         <button
-          className="w-full flex justify-between items-center gap-6 py-6 text-left text-xl lg:text-2xl font-bold text-adire"
+          className="w-full flex justify-between items-center gap-6 py-6 text-left text-xl lg:text-2xl font-bold text-brand"
           aria-expanded={open}
           aria-controls={id}
           onClick={() => setOpen(o => !o)}
@@ -47,7 +47,7 @@ export default function Faq() {
     <section className="px-4 sm:px-8 py-24 lg:py-32">
       <div className="mx-auto max-w-[1440px] grid lg:grid-cols-12 gap-12">
         <div className="lg:col-span-5"><SectionHead title="Questions organisers ask." /></div>
-        <div className="lg:col-span-6 lg:col-start-7 border-b border-adire/15">
+        <div className="lg:col-span-6 lg:col-start-7 border-b border-brand/15">
           {SPEAKING_FAQ.map(f => <Question key={f.q} {...f} />)}
         </div>
       </div>

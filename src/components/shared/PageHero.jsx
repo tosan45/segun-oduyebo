@@ -9,8 +9,8 @@ export default function PageHero({ page, title, intro, photo, actions, note }) {
     <section className="relative px-4 sm:px-8 pt-32 lg:pt-40 pb-16 lg:pb-24 overflow-hidden">
       <div className="mx-auto max-w-[1440px] grid lg:grid-cols-12 gap-10 lg:gap-8 items-end">
         <div className="lg:col-span-7 relative z-10">
-          <Reveal as="p" variant="fade" className="text-adire-2 font-semibold mb-6 flex items-center gap-3"><Dot />{page}</Reveal>
-          <SplitText as="h1" text={title} className="display text-d1 text-adire" />
+          <Reveal as="p" variant="fade" className="text-brand-2 font-semibold mb-6 flex items-center gap-3"><Dot />{page}</Reveal>
+          <SplitText as="h1" text={title} className="display text-d1 text-brand" />
           {intro && <Reveal as="p" delay={0.25} className="text-lede text-mute mt-8 measure">{intro}</Reveal>}
           {actions && <Reveal delay={0.4} className="mt-10 flex flex-wrap gap-3">{actions}</Reveal>}
           {note && <Reveal as="p" variant="fade" delay={0.5} className="mt-6 text-sm text-mute measure">{note}</Reveal>}

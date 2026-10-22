@@ -25,7 +25,7 @@ export default function EpisodeFormat() {
   const pinned = large && !reduce;
 
   return (
-    <section ref={section} className={`adire on-dark relative ${pinned ? 'h-[300vh]' : ''}`}>
+    <section ref={section} className={`brand on-dark relative ${pinned ? 'h-[300vh]' : ''}`}>
       <div className={`flex flex-col justify-center py-24 ${pinned ? 'sticky top-0 h-svh overflow-hidden lg:py-0' : ''}`}>
         <div className="px-4 sm:px-8 mx-auto w-full max-w-[1440px]">
           <SectionHead dark title="Every episode moves the same way." intro="From the problem people actually live with to the change that comes from practising the truth." />

@@ -12,7 +12,7 @@ export default function VerifiedStory() {
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start 70%', 'end 60%'] });
 
   return (
-    <section className="adire on-dark px-4 sm:px-8 py-24 lg:py-36">
+    <section className="brand on-dark px-4 sm:px-8 py-24 lg:py-36">
       <div className="mx-auto max-w-[1440px] grid lg:grid-cols-12 gap-12">
         <div className="lg:col-span-5">
           <SectionHead
@@ -27,7 +27,7 @@ export default function VerifiedStory() {
           </span>
           {TIMELINE.map(t => (
             <Reveal as="li" key={t.when} className="relative pb-14 last:pb-0">
-              <span className="absolute -left-10 top-1.5 size-4 rounded-full bg-ochre ring-4 ring-adire" aria-hidden="true" />
+              <span className="absolute -left-10 top-1.5 size-4 rounded-full bg-ochre ring-4 ring-brand" aria-hidden="true" />
               <p className="text-ochre font-semibold">{t.when}</p>
               <p className="text-2xl lg:text-3xl font-bold leading-tight mt-2 wide">{t.what}</p>
               <a className="ulink inline-flex items-center gap-2 mt-4 text-white/75 hover:text-white" href={t.url} target="_blank" rel="noopener">

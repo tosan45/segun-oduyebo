@@ -47,9 +47,9 @@ export default function Lightbox({ filter, photo, onChange, onClose }) {
           aria-modal="true"
           aria-label="Photo viewer"
           className="fixed inset-0 z-90 grid place-items-center"
-          initial={{ backgroundColor: 'rgba(13,16,48,0)' }}
-          animate={{ backgroundColor: 'rgba(13,16,48,.94)' }}
-          exit={{ backgroundColor: 'rgba(13,16,48,0)' }}
+          initial={{ backgroundColor: 'rgba(11,36,24,0)' }}
+          animate={{ backgroundColor: 'rgba(11,36,24,.94)' }}
+          exit={{ backgroundColor: 'rgba(11,36,24,0)' }}
           transition={{ duration: 0.5 }}
           onClick={e => { if (e.target === e.currentTarget) close(); }}
         >

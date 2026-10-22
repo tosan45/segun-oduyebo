@@ -14,10 +14,10 @@ export default function AreasOfWork() {
             <Frame photo="osunStage" ratio="aspect-[3/4]" parallax={50} className="mt-16" />
           </div>
         </div>
-        <ul className="lg:col-span-6 lg:col-start-7 border-b border-adire/15">
+        <ul className="lg:col-span-6 lg:col-start-7 border-b border-brand/15">
           {ABOUT_AREAS.map(a => (
-            <Reveal as="li" key={a} className="border-t border-adire/15 py-6 lg:py-8 group">
-              <span className="display stretch-row text-[clamp(1.6rem,3.2vw,3rem)] leading-none text-adire">{a}</span>
+            <Reveal as="li" key={a} className="border-t border-brand/15 py-6 lg:py-8 group">
+              <span className="display stretch-row text-[clamp(1.6rem,3.2vw,3rem)] leading-none text-brand">{a}</span>
             </Reveal>
           ))}
         </ul>

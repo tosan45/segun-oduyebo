@@ -2,7 +2,7 @@ import { DESTINY_MODEL } from '../../../content.js';
 import SectionHead from '../../../components/shared/SectionHead.jsx';
 import Stagger, { StaggerItem } from '../../../components/motion/Stagger.jsx';
 
-const TONES = ['bg-adire text-white', 'bg-white text-adire', 'bg-ochre text-ink'];
+const TONES = ['bg-brand text-white', 'bg-white text-brand', 'bg-ochre text-ink'];
 
 export default function CounsellingModel() {
   return (

@@ -15,7 +15,7 @@ export default function HowToJoin() {
               <Reveal as="li" key={s.name} delay={i * 0.1} className="flex gap-6">
                 <span className="display text-d2 text-ochre leading-none w-14 shrink-0">{i + 1}</span>
                 <span>
-                  <span className="block text-2xl font-bold text-adire">{s.name}</span>
+                  <span className="block text-2xl font-bold text-brand">{s.name}</span>
                   <span className="block text-mute mt-1">{s.text}</span>
                 </span>
               </Reveal>

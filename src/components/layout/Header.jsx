@@ -30,7 +30,7 @@ export default function Header({ current, menuOpen, onOpenMenu }) {
       transition={{ duration: 0.5, ease: EASE }}
     >
       <div className="mx-auto max-w-[1440px] h-20 px-4 sm:px-8 flex items-center justify-between gap-6">
-        <a href="#/" className="flex items-center gap-3 text-adire" aria-label="Segun Oduyebo, home">
+        <a href="#/" className="flex items-center gap-3 text-brand" aria-label="Segun Oduyebo, home">
           <Mark />
           <span className="hidden sm:block font-bold text-lg wide tracking-tight">Segun Oduyebo</span>
         </a>

@@ -5,7 +5,7 @@ import { EASE } from '../../../lib/motion.js';
 import SectionHead from '../../../components/shared/SectionHead.jsx';
 import { CheckIcon } from '../../../components/ui/Icons.jsx';
 
-/* Tabs for each role. The indigo pill glides between tabs (shared layoutId)
+/* Tabs for each role. The green pill glides between tabs (shared layoutId)
    and the panel's list cascades in. Arrow keys move between tabs. */
 export default function RolePortals() {
   const [active, setActive] = useState(0);
@@ -39,10 +39,10 @@ export default function RolePortals() {
                 tabIndex={i === active ? 0 : -1}
                 onClick={() => setActive(i)}
                 onKeyDown={onKey}
-                className={`relative rounded-full px-4 py-2.5 font-semibold transition-colors duration-300 ${i === active ? 'text-white' : 'text-adire'}`}
+                className={`relative rounded-full px-4 py-2.5 font-semibold transition-colors duration-300 ${i === active ? 'text-white' : 'text-brand'}`}
               >
                 {i === active && (
-                  <motion.span layoutId="role-pill" className="absolute inset-0 rounded-full bg-adire" transition={{ type: 'spring', stiffness: 380, damping: 32 }} />
+                  <motion.span layoutId="role-pill" className="absolute inset-0 rounded-full bg-brand" transition={{ type: 'spring', stiffness: 380, damping: 32 }} />
                 )}
                 <span className="relative">{p.name}</span>
               </button>
@@ -52,11 +52,11 @@ export default function RolePortals() {
           <div id="role-panel" role="tabpanel" aria-labelledby={`role-tab-${active}`} className="mt-10 min-h-64">
             <AnimatePresence mode="wait">
               <motion.div key={active} initial="hidden" animate="show" exit={{ opacity: 0, y: -10, transition: { duration: 0.2 } }} variants={{ show: { transition: { staggerChildren: 0.06 } } }}>
-                <motion.h3 variants={ITEM} className="display text-d2 text-adire">{portal.name}</motion.h3>
+                <motion.h3 variants={ITEM} className="display text-d2 text-brand">{portal.name}</motion.h3>
                 <ul className="mt-8 grid sm:grid-cols-2 gap-x-8">
                   {portal.items.map(it => (
-                    <motion.li key={it} variants={ITEM} className="border-t border-adire/15 py-4 text-lg flex gap-3 items-start">
-                      <CheckIcon className="size-5 mt-1 text-adire-3 shrink-0" />{it}
+                    <motion.li key={it} variants={ITEM} className="border-t border-brand/15 py-4 text-lg flex gap-3 items-start">
+                      <CheckIcon className="size-5 mt-1 text-brand-3 shrink-0" />{it}
                     </motion.li>
                   ))}
                 </ul>

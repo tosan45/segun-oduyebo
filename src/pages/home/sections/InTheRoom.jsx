@@ -18,7 +18,7 @@ const Row = ({ photos }) => photos.map(k => (
 /* Two tilted ribbons of event photos running in opposite directions */
 export default function InTheRoom() {
   return (
-    <section className="adire on-dark py-24 lg:py-32 overflow-hidden">
+    <section className="brand on-dark py-24 lg:py-32 overflow-hidden">
       <div className="px-4 sm:px-8 mx-auto max-w-[1440px] flex flex-wrap gap-8 items-end justify-between mb-14">
         <SectionHead title="In the room." intro="Churches, schools, universities and conference halls across Osun and beyond." dark />
         <Reveal><Button to="gallery" variant="line">See the gallery</Button></Reveal>

@@ -15,8 +15,8 @@ export default function PendingFindings() {
         </div>
         <Stagger as="ul" className="lg:col-span-6 lg:col-start-7 grid sm:grid-cols-2 gap-4">
           {RESEARCH_SLOTS.map(s => (
-            <StaggerItem as="li" key={s} className="rounded-md border-2 border-dashed border-adire/25 p-6 min-h-40 flex flex-col justify-between">
-              <span className="text-2xl font-bold text-adire wide">{s}</span>
+            <StaggerItem as="li" key={s} className="rounded-md border-2 border-dashed border-brand/25 p-6 min-h-40 flex flex-col justify-between">
+              <span className="text-2xl font-bold text-brand wide">{s}</span>
               <span className="text-sm text-mute">Not yet published</span>
             </StaggerItem>
           ))}

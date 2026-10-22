@@ -41,7 +41,7 @@ export default function Menu({ open, origin, onClose }) {
           role="dialog"
           aria-modal="true"
           aria-label="Site menu"
-          className="fixed inset-0 z-70 adire on-dark overflow-y-auto"
+          className="fixed inset-0 z-70 brand on-dark overflow-y-auto"
           initial={{ clipPath: `circle(0px at ${at})` }}
           animate={{ clipPath: `circle(150vmax at ${at})` }}
           exit={{ clipPath: `circle(0px at ${at})` }}
@@ -55,7 +55,7 @@ export default function Menu({ open, origin, onClose }) {
           >
             <div className="h-20 flex items-center justify-between">
               <a href="#/" onClick={onClose} className="flex items-center gap-3">
-                <Mark className="size-10 bg-ochre text-adire" />
+                <Mark className="size-10 bg-ochre text-brand" />
                 <span className="font-bold text-lg wide">Segun Oduyebo</span>
               </a>
               <button ref={closeRef} className="btn btn-line !min-h-11 !px-5" onClick={close}>Close<CloseIcon /></button>

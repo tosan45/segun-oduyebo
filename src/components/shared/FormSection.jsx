@@ -2,10 +2,10 @@ import SplitText from '../motion/SplitText.jsx';
 import Reveal from '../motion/Reveal.jsx';
 import Form from '../forms/Form.jsx';
 
-/* Full-bleed indigo band holding a form. `id` makes it an anchor target. */
+/* Full-bleed brand-green band holding a form. `id` makes it an anchor target. */
 export default function FormSection({ id, title, intro, fields, submit }) {
   return (
-    <section id={id} className="adire on-dark px-4 sm:px-8 py-24 lg:py-32">
+    <section id={id} className="brand on-dark px-4 sm:px-8 py-24 lg:py-32">
       <div className="mx-auto max-w-[1440px] grid lg:grid-cols-12 gap-12">
         <div className="lg:col-span-5">
           <SplitText text={title} className="display text-d2" />

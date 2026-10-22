@@ -1,5 +1,5 @@
 /* The SO monogram in an arch */
-export default function Mark({ className = 'size-10 bg-adire text-ochre' }) {
+export default function Mark({ className = 'size-10 bg-brand text-ochre' }) {
   return (
     <span className={`grid place-items-center font-bold wide text-[.8rem] leading-none ${className}`} style={{ borderRadius: '999px 999px 6px 6px' }} aria-hidden="true">
       SO

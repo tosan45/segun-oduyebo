@@ -39,8 +39,8 @@ export default function PodcastQuotes() {
     >
       <div className="mx-auto max-w-[1440px] grid lg:grid-cols-12 gap-12">
         <div className="lg:col-span-4">
-          <Reveal as="p" variant="fade" className="text-adire-2 font-semibold">The podcast</Reveal>
-          <SplitText text="The Fulfillment Perspective" className="display text-d2 text-adire mt-4" />
+          <Reveal as="p" variant="fade" className="text-brand-2 font-semibold">The podcast</Reveal>
+          <SplitText text="The Fulfillment Perspective" className="display text-d2 text-brand mt-4" />
           <Reveal as="p" className="text-lede text-mute mt-6">
             Faith-rooted personal formation for purposeful African living. Coming soon to Spotify, Apple Podcasts and YouTube.
           </Reveal>
@@ -59,8 +59,8 @@ export default function PodcastQuotes() {
                 exit={{ opacity: 0, y: -16 }}
                 transition={{ duration: 0.5, ease: EASE }}
               >
-                <blockquote className="font-serif text-[clamp(1.6rem,3vw,2.75rem)] leading-[1.2] text-adire">{theme.quote}</blockquote>
-                <figcaption className="mt-6 font-semibold text-adire-2">{theme.name}</figcaption>
+                <blockquote className="font-serif text-[clamp(1.6rem,3vw,2.75rem)] leading-[1.2] text-brand">{theme.quote}</blockquote>
+                <figcaption className="mt-6 font-semibold text-brand-2">{theme.name}</figcaption>
               </motion.figure>
             </AnimatePresence>
           </div>
@@ -68,8 +68,8 @@ export default function PodcastQuotes() {
           <div className="mt-10 flex gap-2" role="group" aria-label="Choose a theme">
             {PODCAST_THEMES.map((t, i) => (
               <button key={t.name} className="h-11 px-1" onClick={() => choose(i)} aria-label={t.name} aria-pressed={i === active}>
-                <span className="block h-1 w-12 rounded-full bg-adire/15 overflow-hidden">
-                  <motion.span className="block h-full w-full bg-adire origin-left" style={{ scaleX: i === active ? progress : i < active ? 1 : 0 }} />
+                <span className="block h-1 w-12 rounded-full bg-brand/15 overflow-hidden">
+                  <motion.span className="block h-full w-full bg-brand origin-left" style={{ scaleX: i === active ? progress : i < active ? 1 : 0 }} />
                 </span>
               </button>
             ))}

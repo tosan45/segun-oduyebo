@@ -6,12 +6,12 @@ import Stagger, { StaggerItem } from '../../../components/motion/Stagger.jsx';
 import Button from '../../../components/ui/Button.jsx';
 
 export const SPINE_TONES = {
-  adire: 'bg-adire text-white',
+  brand: 'bg-brand text-white',
   ochre: 'bg-ochre text-ink',
-  wash: 'bg-wash text-adire ring-1 ring-inset ring-adire/15',
+  wash: 'bg-wash text-brand ring-1 ring-inset ring-brand/15',
   ink: 'bg-ink text-ochre',
-  'adire-2': 'bg-adire-2 text-white',
-  'adire-3': 'bg-adire-3 text-white'
+  'brand-2': 'bg-brand-2 text-white',
+  'brand-3': 'bg-brand-3 text-white'
 };
 
 const HEIGHTS = [86, 92, 78, 90, 82, 88];
@@ -26,7 +26,7 @@ export default function BookShelf() {
           <SectionHead title="Ideas you can carry with you." intro="Books on leadership, responsibility, vision, discipline and personal development." />
           <Reveal className="mt-8"><Button to="books" variant="ink">Browse the books</Button></Reveal>
         </div>
-        <Stagger gap={0.08} amount={0.3} className="lg:col-span-7 flex items-end gap-2 sm:gap-3 h-[22rem] sm:h-[26rem] border-b-4 border-adire overflow-x-auto overflow-y-hidden">
+        <Stagger gap={0.08} amount={0.3} className="lg:col-span-7 flex items-end gap-2 sm:gap-3 h-[22rem] sm:h-[26rem] border-b-4 border-brand overflow-x-auto overflow-y-hidden">
           {BOOKS.map((b, i) => (
             <StaggerItem
               as="a"

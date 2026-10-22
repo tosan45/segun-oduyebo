@@ -32,17 +32,17 @@ export default function WaysIn() {
     <section className="px-4 sm:px-8 py-28 lg:py-40">
       <div className="mx-auto max-w-[1440px]">
         <SectionHead title="Find your way in." intro="Every part of the work starts in the same place: people. Pick the door that fits where you are." />
-        <ul className="mt-16 border-b border-adire/15" onPointerMove={follow} onPointerLeave={() => setShown(false)}>
+        <ul className="mt-16 border-b border-brand/15" onPointerMove={follow} onPointerLeave={() => setShown(false)}>
           {WAYS_IN.map(w => (
-            <Reveal as="li" key={w.route} className="border-t border-adire/15">
+            <Reveal as="li" key={w.route} className="border-t border-brand/15">
               <a
-                className="group grid md:grid-cols-12 gap-2 md:gap-8 items-center py-7 md:py-9 text-adire"
+                className="group grid md:grid-cols-12 gap-2 md:gap-8 items-center py-7 md:py-9 text-brand"
                 href={href(w.route)}
                 onPointerEnter={e => enter(e, w.photo)}
               >
-                <span className="md:col-span-7 display stretch-row text-[clamp(1.8rem,4vw,3.75rem)] leading-none group-hover:text-adire-3">{w.name}</span>
+                <span className="md:col-span-7 display stretch-row text-[clamp(1.8rem,4vw,3.75rem)] leading-none group-hover:text-brand-3">{w.name}</span>
                 <span className="md:col-span-4 text-mute">{w.text}</span>
-                <span className="hidden md:grid md:col-span-1 justify-self-end size-12 rounded-full border border-adire/25 place-items-center transition-all duration-500 group-hover:bg-ochre group-hover:border-ochre group-hover:-rotate-45">
+                <span className="hidden md:grid md:col-span-1 justify-self-end size-12 rounded-full border border-brand/25 place-items-center transition-all duration-500 group-hover:bg-ochre group-hover:border-ochre group-hover:-rotate-45">
                   <ArrowIcon className="size-5" />
                 </span>
               </a>
